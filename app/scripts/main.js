@@ -17,6 +17,11 @@
       $routeProvider.when('/add', {
         templateUrl: 'templates/add.html',
         controller: 'GiftsController'
+      });
+
+      $routeProvider.when('/edit/:id', {
+        templateUrl: 'templates/edit.html',
+        controller: 'GiftsController'
       })
 
     });
