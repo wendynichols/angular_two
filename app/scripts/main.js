@@ -1,1 +1,7 @@
-console.log('The Iron Yard Rocks');
+  (function () {
+
+    angular.module('HolidayList', []);  //Setter
+
+
+
+  }());
