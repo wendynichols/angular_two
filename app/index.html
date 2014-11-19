@@ -23,9 +23,14 @@
   </head>
   <body ng-app="HolidayList">
 
-    <div class="hero-unit" ng-controller="Home">
+    <div class="hero-unit">
       <h1>ANGULAR TWO</h1>
-      <p>Hello {{ name }}</p>
+      <nav>
+        <a href="#/">Home</a> |
+        <a href="#/add/">Add</a>
+
+      </nav>
+        <div ng-view></div>
 
     </div>
 
@@ -34,12 +39,18 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
 
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/giftsFactory.js"></script>
+        <script src="scripts/controllers/gift-controller.js"></script>
+
+
         <!-- endbuild -->
 </body>
 </html>
