@@ -20,6 +20,15 @@
         });
       }
 
+      function editGift () {
+        $http.edit(url, gift).success( function () {
+          $rootScope.$broadcast('gift:edited')
+        })
+
+
+
+      }
+
       return {
 
         getGifts: getGifts,
