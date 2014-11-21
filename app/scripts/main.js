@@ -20,8 +20,8 @@
       });
 
       $routeProvider.when('/edit/:id', {
-        templateUrl: 'templates/edit.html',
-        controller: 'GiftsController'
+        templateUrl: 'templates/single.html',
+        controller: 'EditController'
       })
 
     });

@@ -20,20 +20,25 @@
         });
       }
 
-      function editGift () {
-        $http.edit(url, gift).success( function () {
-          $rootScope.$broadcast('gift:edited')
-        })
-
-
-
+      function editGift (gift) {
+        return $http.put(url + gift._id, gift).then(function(){
+          $rootScope.$broadcast('gift:editted');
+        });
       }
+
+      function deleteGift(gift) {
+        return $http.delete(url + gift._id, gift).then(function(){
+          $rootScope.$broadcast('gift:deleted');
+        });
+      };
 
       return {
 
         getGifts: getGifts,
         getGift: getGift,
-        addGift: addGift
+        addGift: addGift,
+        editGift: editGift,
+        deleteGift: deleteGift
 
       };
 
