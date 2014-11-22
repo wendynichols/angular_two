@@ -1,0 +1,6 @@
+  <ul>
+    <li ng-repeat="gift in gifts">
+      {{gift.name}} wants a {{gift.item}} for Christmas. ~ Santa's List: {{gift.action}}
+      <a class="edit" href="#/edit/{{gift._id}}">EdIT</a>
+    </li>
+  </ul>
