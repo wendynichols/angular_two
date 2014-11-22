@@ -1,7 +1,12 @@
-<form ng-submit="addGift(gift)">
-  <input ng-model="gift.name" placeholder="name" />
-  <input ng-model="gift.budget" placeholder="budget" />
-  <input ng-model="gift.item" placeholder="item" />
-  <button>Add</button>
+<div>
 
-</form>
+  <input ng-model="gift.name" placeholder="name"/><br>
+  <input ng-model="gift.budget" placeholder="budget"/><br>
+  <input ng-model="gift.item" placeholder="item"/><br>
+
+
+  <button ng-click="addGift(gift)">Add</button>
+
+
+
+</div>

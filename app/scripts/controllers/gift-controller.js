@@ -17,15 +17,6 @@
           $rootScope.$on('gift:added', function () {
             $location.path('/');
           });
-
-    //     },
-    //
-    // $scope.editGift = function () {
-    //   giftsFactory.editGift();
-    //
-    //   $rootScope.$on('gift:edited', function () {
-    //     $location.path('/');
-    //   });
     }
 
 
