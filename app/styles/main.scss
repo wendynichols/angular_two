@@ -5,24 +5,26 @@
 // Custom Styles
 body {
   background: url('http://www.ilikesleeping.com/umbraco/ImageGen.ashx?image=/media/16694/wrappingpaper_lowres.jpg&width=663&format=jpeg&compression=90');
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Coming Soon', cursive;
   color: #333;
 }
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 700px;
+  width: 750px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   background-color: RGBA(116, 157, 175, 1);
   border-radius: 6px;
-  padding: 60px;
+  padding: 25px;
   h1 {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
     color: RGBA(43, 67, 3, 1);
+    padding: 10px;
+    text-align: center;
   }
 }
 input {
@@ -31,11 +33,24 @@ input {
 }
 li {
   list-style: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.home, .add {
+.home, .add, .edit, .add2 {
   color: red;
   text-decoration: none;
   border: solid 1px;
-  padding: 5px;
+  border-radius: 2px;
+  padding: 3px;
   background-color: RGBA(205, 201, 170, 1);
+}
+input {
+  border-radius: 2px;
+  border: solid 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.inputFields {
+  margin-top: 10px;
 }
