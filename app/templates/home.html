@@ -1,6 +1,6 @@
   <ul>
     <li ng-repeat="gift in gifts">
-      {{gift.name}} is budgeted for ${{gift.budget}}, they want {{gift.item}}.<br>
+      {{gift.name}} wants a {{gift.item}} for Christmas. Santa's List:{{gift.action}}
       <a href="#/edit/{{gift._id}}">Edit</a>
     </li>
   </ul>
